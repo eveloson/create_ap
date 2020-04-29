@@ -1,0 +1,9 @@
+您好，您可以编辑/usr/lib/systemd/system/create_ap.service。
+
+更改“ ExecStart”，例如：
+ExecStart = / usr / bin / create_ap -n wlan0名称密码
+
+然后，执行以下命令：
+systemctl daemon-reload
+systemctl enable create_ap.service
+systemctl start create_ap.service
